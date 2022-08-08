@@ -1,0 +1,214 @@
+====================抽象语法树的结构====================
+Specification
+	Definition
+		Type_decl
+			Struct_type
+				Terminator struct
+					Terminator ID
+					Member_list
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator float
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator double
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator long double
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator short
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int16
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator long
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int32
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator longlong
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int64
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int8
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Unsigned_int
+										Terminator unsignedshort
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Scoped_name
+								Terminator ID
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Unsigned_int
+										Terminator unsignedlong
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Scoped_name
+								Terminator ID
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Unsigned_int
+										Terminator unsignedlonglong
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Scoped_name
+								Terminator ID
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+						Type_spec
+							Scoped_name
+								Terminator ID
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+						Type_spec
+							Base_type_spec
+								Terminator char
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+						Type_spec
+							Base_type_spec
+								Terminator string
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+						Type_spec
+							Base_type_spec
+								Terminator boolean
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+====================抽象语法树的内容====================
+    struct
+      test
+      float
+        a1
+      double
+        a2
+      long double
+        a3
+      short
+        a4
+      int16
+        a5
+      long
+        a6
+      int32
+        a7
+      longlong
+        a8
+      int64
+        a9
+      int8
+        a10_A
+      unsignedshort
+        a11_B
+      uint16
+        a12_C1
+      unsignedlong
+        a13_asd112
+      uint32
+        a14_are
+      unsignedlonglong
+        a15_are123
+      uint64
+        a16_123are
+      uint8
+        a17_test
+      char
+        a18_123test
+      string
+        a19
+      boolean
+        a20

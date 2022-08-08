@@ -1,0 +1,26 @@
+struct test{
+
+     float a1=0.1e+10;
+     double a2=1.5E-100;
+     long double a3=112d;
+     long double ax0=123D;
+     float ax1=12f;
+     float ax2=12F;
+
+     short a4=0;
+     int16 a5=0l;
+     long a6=90l;
+     int32 a7=-90;
+     long long a8=10L;
+     int64 a9=-10L;
+     int8 a10_A=+10;
+     unsigned short a11_B=+10l;
+
+     char a18_123test="\b";
+     string a19="test";
+
+     boolean a20=TRUE;
+     boolean a21=true;
+     boolean a22=FALSE;
+     boolean a24=false;
+};

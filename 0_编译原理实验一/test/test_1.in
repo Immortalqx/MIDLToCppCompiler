@@ -1,0 +1,12 @@
+struct test_0{
+     float a1;
+     char a18,a21;
+
+};
+struct test_1{
+     int8 a2;
+     string a19,a25,a26;
+     boolean a20,a27;
+};
+struct test_2;
+struct test_3;

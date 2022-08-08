@@ -1,0 +1,35 @@
+module Big_Test{
+    struct test_0{
+         float a1;
+         double a2;
+    };
+    struct test_1{
+         long double a3;
+         short a4;
+         int16 a5;
+         long a6;
+    };
+    module Small_Test{
+        struct test_2{
+             int32 a7;
+             long long a8;
+             int64 a9;
+             int8 a10;
+             unsigned short a11;
+             uint16 a12;
+        };
+        struct test_3{
+             unsigned long a13;
+             uint32 a14;
+             unsigned long long a15;
+             uint64 a16;
+        };
+    };
+};
+struct test_4{
+    uint8 a17;
+    char a18;
+    string a19,a23;
+    boolean a20,a21,a22;
+};
+struct test_5;

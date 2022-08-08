@@ -1,0 +1,10 @@
+struct test{
+     float a1[1]=[0.1e+10];
+     double a2[-23]=[1.5E-100];
+     long double a3[TRUE]=[112d];
+     long double ax0[1|4%1^11/2]=[23D&12>>2|TRUE^false];
+     float ax1[15/658*5-5+3&12];
+
+     char a18_123test[~"test"^"liuquanxiang"];
+     string a19["immortalqx"]=["github"];
+};

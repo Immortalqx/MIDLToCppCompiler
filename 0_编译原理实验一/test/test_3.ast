@@ -1,0 +1,52 @@
+====================抽象语法树的结构====================
+Specification
+	Definition
+		Type_decl
+			Struct_type
+				Terminator struct
+					Terminator ID
+					Member_list
+						Type_spec
+							Scoped_name
+								Terminator ID
+									Terminator ::
+										Terminator ID
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Scoped_name
+								Terminator ID
+									Terminator ::
+										Terminator ID
+									Terminator ::
+										Terminator ID
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int8
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+====================抽象语法树的内容====================
+    struct
+      test_1
+      Big_Test
+        ::
+          test_0
+            a3
+      Hello
+        ::
+          World
+        ::
+          Test
+            a4
+      int8
+        a5

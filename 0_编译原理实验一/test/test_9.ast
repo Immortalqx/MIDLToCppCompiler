@@ -1,0 +1,271 @@
+====================抽象语法树的结构====================
+Specification
+	Definition
+		Type_decl
+			Struct_type
+				Terminator struct
+					Terminator ID
+					Member_list
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator float
+										Declarators
+											Declarator
+												Array_declarator
+													Terminator ID
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+														Terminator =
+															Exp_list
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Terminator +
+																								Literal
+																									Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator double
+										Declarators
+											Declarator
+												Array_declarator
+													Terminator ID
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Terminator -
+																						Literal
+																							Terminator Literal
+																Terminator |
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator float
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+														Terminator =
+															Or_expr
+																Xor_expr
+																	And_expr
+																		Shift_expr
+																			Add_expr
+																				Mult_expr
+																					Unary_expr
+																						Terminator -
+																							Literal
+																								Terminator Literal
+																					Terminator +
+																						Mult_expr
+																							Unary_expr
+																								Terminator -
+																									Literal
+																										Terminator Literal
+																					Terminator +
+																						Mult_expr
+																							Unary_expr
+																								Terminator +
+																									Literal
+																										Terminator Literal
+																								Terminator *
+																									Unary_expr
+																										Literal
+																											Terminator Literal
+																								Terminator /
+																									Unary_expr
+																										Literal
+																											Terminator Literal
+																								Terminator %
+																									Unary_expr
+																										Literal
+																											Terminator Literal
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int16
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+															Terminator =
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Terminator -
+																								Literal
+																									Terminator Literal
+																						Terminator +
+																							Mult_expr
+																								Unary_expr
+																									Literal
+																										Terminator Literal
+																		Terminator |
+																			Xor_expr
+																				And_expr
+																					Shift_expr
+																						Add_expr
+																							Mult_expr
+																								Unary_expr
+																									Literal
+																										Terminator Literal
+																					Terminator ^
+																						And_expr
+																							Shift_expr
+																								Add_expr
+																									Mult_expr
+																										Unary_expr
+																											Literal
+																												Terminator Literal
+																									Terminator <<
+																										Add_expr
+																											Mult_expr
+																												Unary_expr
+																													Literal
+																														Terminator Literal
+																									Terminator >>
+																										Add_expr
+																											Mult_expr
+																												Unary_expr
+																													Literal
+																														Terminator Literal
+																												Terminator +
+																													Mult_expr
+																														Unary_expr
+																															Literal
+																																Terminator Literal
+																					Terminator ^
+																						And_expr
+																							Shift_expr
+																								Add_expr
+																									Mult_expr
+																										Unary_expr
+						Type_spec
+							Base_type_spec
+								Terminator boolean
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+													Terminator =
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+																		Terminator &
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+																	Terminator ^
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+																				Terminator &
+																					Shift_expr
+																						Add_expr
+																							Mult_expr
+																								Unary_expr
+																									Literal
+																										Terminator Literal
+====================抽象语法树的内容====================
+    struct
+      test
+      float
+        a1
+          1
+          =
+            +
+              0.1e+10
+      double
+        a2
+          -
+            23
+          |
+            123
+      float
+        a1
+          =
+            -
+              10D
+            +
+              -
+                20l
+            +
+              +
+                100f
+              *
+                100
+              /
+                12
+              %
+                123
+      int16
+        a5
+          =
+            -
+              1
+            +
+              1
+            |
+              12
+              ^
+                123
+                <<
+                  1
+                >>
+                  12
+                  +
+                    4
+              ^
+      boolean
+        a20
+          =
+            TRUE
+            &
+              FALSE
+            ^
+              false
+              &
+                true

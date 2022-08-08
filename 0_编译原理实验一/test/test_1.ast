@@ -1,0 +1,95 @@
+====================抽象语法树的结构====================
+Specification
+	Definition
+		Type_decl
+			Struct_type
+				Terminator struct
+					Terminator ID
+					Member_list
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator float
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+						Type_spec
+							Base_type_spec
+								Terminator char
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+										Declarator
+											Simple_declarator
+												Terminator ID
+	Definition
+		Type_decl
+			Struct_type
+				Terminator struct
+					Terminator ID
+					Member_list
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int8
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+						Type_spec
+							Base_type_spec
+								Terminator string
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+										Declarator
+											Simple_declarator
+												Terminator ID
+										Declarator
+											Simple_declarator
+												Terminator ID
+						Type_spec
+							Base_type_spec
+								Terminator boolean
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+										Declarator
+											Simple_declarator
+												Terminator ID
+	Definition
+		Type_decl
+			Terminator struct
+				Terminator ID
+	Definition
+		Type_decl
+			Terminator struct
+				Terminator ID
+====================抽象语法树的内容====================
+    struct
+      test_0
+      float
+        a1
+      char
+        a18
+        a21
+    struct
+      test_1
+      int8
+        a2
+      string
+        a19
+        a25
+        a26
+      boolean
+        a20
+        a27
+    struct
+      test_2
+    struct
+      test_3

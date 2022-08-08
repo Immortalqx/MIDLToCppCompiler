@@ -1,0 +1,297 @@
+====================抽象语法树的结构====================
+Specification
+	Definition
+		Type_decl
+			Struct_type
+				Terminator struct
+					Terminator ID
+					Member_list
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator float
+										Declarators
+											Declarator
+												Array_declarator
+													Terminator ID
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+														Terminator =
+															Exp_list
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Terminator +
+																								Literal
+																									Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator double
+										Declarators
+											Declarator
+												Array_declarator
+													Terminator ID
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Terminator -
+																						Literal
+																							Terminator Literal
+														Terminator =
+															Exp_list
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Terminator -
+																								Literal
+																									Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator long double
+										Declarators
+											Declarator
+												Array_declarator
+													Terminator ID
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+														Terminator =
+															Exp_list
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator long double
+										Declarators
+											Declarator
+												Array_declarator
+													Terminator ID
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+																Terminator |
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+																							Terminator %
+																								Unary_expr
+																									Literal
+																										Terminator Literal
+																			Terminator ^
+																				And_expr
+																					Shift_expr
+																						Add_expr
+																							Mult_expr
+																								Unary_expr
+																									Literal
+																										Terminator Literal
+																									Terminator /
+																										Unary_expr
+																											Literal
+																												Terminator Literal
+														Terminator =
+															Exp_list
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+																				Terminator &
+																					Shift_expr
+																						Add_expr
+																							Mult_expr
+																								Unary_expr
+																									Literal
+																										Terminator Literal
+																							Terminator >>
+																								Add_expr
+																									Mult_expr
+																										Unary_expr
+																											Literal
+																												Terminator Literal
+																		Terminator |
+																			Xor_expr
+																				And_expr
+																					Shift_expr
+																						Add_expr
+																							Mult_expr
+																								Unary_expr
+																									Literal
+																										Terminator Literal
+																					Terminator ^
+																						And_expr
+																							Shift_expr
+																								Add_expr
+																									Mult_expr
+																										Unary_expr
+																											Literal
+																												Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator float
+										Declarators
+											Declarator
+												Array_declarator
+													Terminator ID
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+																					Terminator *
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+																					Terminator /
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+																				Terminator +
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+																				Terminator -
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+																		Terminator &
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+						Type_spec
+							Base_type_spec
+								Terminator char
+									Declarators
+										Declarator
+											Array_declarator
+												Terminator ID
+													Or_expr
+														Xor_expr
+															And_expr
+																Shift_expr
+																	Add_expr
+																		Mult_expr
+																			Unary_expr
+																				Terminator ~
+																					Literal
+																						Terminator Literal
+====================抽象语法树的内容====================
+    struct
+      test
+      float
+        a1
+          1
+          =
+            +
+              0.1e+10
+      double
+        a2
+          -
+            23
+          =
+            -
+              1.5E-100
+      long double
+        a3
+          TRUE
+          =
+            112d
+      long double
+        ax0
+          1
+          |
+            4
+            %
+              1
+            ^
+              11
+              /
+                2
+          =
+            23D
+            &
+              12
+              >>
+                2
+            |
+              TRUE
+              ^
+                false
+      float
+        ax1
+          15
+          *
+            658
+          /
+            5
+          +
+            5
+          -
+            3
+          &
+            12
+      char
+        a18_123test
+          ~
+            "test"^"liuquanxiang"];
+     string a19["immortalqx"]=["github"

@@ -1,0 +1,8 @@
+struct test{
+     float int8;
+     char 123;
+     boolean "test";
+     int8 12_ads;
+     int16 as_;
+     int32 as_12_a;
+};

@@ -1,0 +1,82 @@
+====================抽象语法树的结构====================
+Specification
+	Definition
+		Type_decl
+			Struct_type
+				Terminator struct
+					Terminator ID
+					Member_list
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator float
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+														Terminator =
+															Or_expr
+																Xor_expr
+																	And_expr
+																		Shift_expr
+																			Add_expr
+																				Mult_expr
+																					Unary_expr
+																						Literal
+																							Terminator Literal
+																					Terminator +
+																						Mult_expr
+																							Unary_expr
+																								Literal
+																									Terminator Literal
+																					Terminator -
+																						Mult_expr
+																							Unary_expr
+																								Literal
+																									Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator double
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+														Terminator =
+															Or_expr
+																Xor_expr
+																	And_expr
+																		Shift_expr
+																			Add_expr
+																				Mult_expr
+																					Unary_expr
+																						Literal
+																							Terminator Literal
+																					Terminator -
+																						Mult_expr
+																							Unary_expr
+																								Literal
+																									Terminator Literal
+																								Terminator *
+																									Unary_expr
+																										Literal
+																											Terminator Literal
+====================抽象语法树的内容====================
+    struct
+      test
+      float
+        a1
+          =
+            1
+            +
+              2
+            -
+              3
+      double
+        a2
+          =
+            1.0
+            -
+              2.0
+              *
+                3.1

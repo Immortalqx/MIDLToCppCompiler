@@ -1,0 +1,445 @@
+====================抽象语法树的结构====================
+Specification
+	Definition
+		Type_decl
+			Struct_type
+				Terminator struct
+					Terminator ID
+					Member_list
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator float
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+														Terminator =
+															Or_expr
+																Xor_expr
+																	And_expr
+																		Shift_expr
+																			Add_expr
+																				Mult_expr
+																					Unary_expr
+																						Terminator +
+																							Literal
+																								Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator double
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+														Terminator =
+															Or_expr
+																Xor_expr
+																	And_expr
+																		Shift_expr
+																			Add_expr
+																				Mult_expr
+																					Unary_expr
+																						Terminator -
+																							Literal
+																								Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator long double
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+														Terminator =
+															Or_expr
+																Xor_expr
+																	And_expr
+																		Shift_expr
+																			Add_expr
+																				Mult_expr
+																					Unary_expr
+																						Literal
+																							Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator long double
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+														Terminator =
+															Or_expr
+																Xor_expr
+																	And_expr
+																		Shift_expr
+																			Add_expr
+																				Mult_expr
+																					Unary_expr
+																						Literal
+																							Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator float
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+														Terminator =
+															Or_expr
+																Xor_expr
+																	And_expr
+																		Shift_expr
+																			Add_expr
+																				Mult_expr
+																					Unary_expr
+																						Literal
+																							Terminator Literal
+						Type_spec
+							Base_type_spec
+								Floating_pt_type
+									Terminator float
+										Declarators
+											Declarator
+												Simple_declarator
+													Terminator ID
+														Terminator =
+															Or_expr
+																Xor_expr
+																	And_expr
+																		Shift_expr
+																			Add_expr
+																				Mult_expr
+																					Unary_expr
+																						Literal
+																							Terminator Literal
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator short
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+															Terminator =
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int16
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+															Terminator =
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator long
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+															Terminator =
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int32
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+															Terminator =
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Terminator -
+																								Literal
+																									Terminator Literal
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator longlong
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+															Terminator =
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Literal
+																								Terminator Literal
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int64
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+															Terminator =
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Terminator -
+																								Literal
+																									Terminator Literal
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Signed_int
+										Terminator int8
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+															Terminator =
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Terminator +
+																								Literal
+																									Terminator Literal
+						Type_spec
+							Base_type_spec
+								Integer_type
+									Unsigned_int
+										Terminator unsignedshort
+											Declarators
+												Declarator
+													Simple_declarator
+														Terminator ID
+															Terminator =
+																Or_expr
+																	Xor_expr
+																		And_expr
+																			Shift_expr
+																				Add_expr
+																					Mult_expr
+																						Unary_expr
+																							Terminator +
+																								Literal
+																									Terminator Literal
+						Type_spec
+							Base_type_spec
+								Terminator char
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+													Terminator =
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+						Type_spec
+							Base_type_spec
+								Terminator boolean
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+													Terminator =
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+						Type_spec
+							Base_type_spec
+								Terminator boolean
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+													Terminator =
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+						Type_spec
+							Base_type_spec
+								Terminator boolean
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+													Terminator =
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+						Type_spec
+							Base_type_spec
+								Terminator boolean
+									Declarators
+										Declarator
+											Simple_declarator
+												Terminator ID
+													Terminator =
+														Or_expr
+															Xor_expr
+																And_expr
+																	Shift_expr
+																		Add_expr
+																			Mult_expr
+																				Unary_expr
+																					Literal
+																						Terminator Literal
+====================抽象语法树的内容====================
+    struct
+      test
+      float
+        a1
+          =
+            +
+              0.1e+10
+      double
+        a2
+          =
+            -
+              1.5E-100
+      long double
+        a3
+          =
+            112d
+      long double
+        ax0
+          =
+            123D
+      float
+        ax1
+          =
+            12f
+      float
+        ax2
+          =
+            12F
+      short
+        a4
+          =
+            0
+      int16
+        a5
+          =
+            0l
+      long
+        a6
+          =
+            90l
+      int32
+        a7
+          =
+            -
+              90
+      longlong
+        a8
+          =
+            10L
+      int64
+        a9
+          =
+            -
+              10L
+      int8
+        a10_A
+          =
+            +
+              10
+      unsignedshort
+        a11_B
+          =
+            +
+              10l
+      char
+        a18_123test
+          =
+            "\b";
+     string a19="test"
+      boolean
+        a20
+          =
+            TRUE
+      boolean
+        a21
+          =
+            true
+      boolean
+        a22
+          =
+            FALSE
+      boolean
+        a24
+          =
+            false

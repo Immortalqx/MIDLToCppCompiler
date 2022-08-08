@@ -1,0 +1,5 @@
+struct test_1{
+    Big_Test::test_0 a3;
+    Hello::World::Test a4;
+    int8 a5;
+};

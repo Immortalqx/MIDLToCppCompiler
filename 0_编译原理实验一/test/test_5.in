@@ -1,0 +1,6 @@
+struct test{
+     float a1=-10D+20l-100f*100/12%123;
+     short a4=-1+1-1+1;
+     int16 a5=-1+1|12^123>>1<<12+4;
+     boolean a20=TRUE|FALSE^false&true;
+};
